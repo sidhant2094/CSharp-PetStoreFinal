@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-// the ourAnimals array will store the following: 
+
 string animalSpecies = "";
 string animalID = "";
 string animalAge = "";
@@ -9,7 +9,7 @@ string animalPhysicalDescription = "";
 string animalPersonalityDescription = "";
 string animalNickname = "";
 
-// variables that support data entry
+
 int maxPets = 8;
 string? readResult;
 string menuSelection = "";
@@ -18,10 +18,10 @@ string anotherPet = "y";
 bool validEntry = false;
 int petAge = 0;
 
-// array used to store runtime data, there is no persisted data
+
 string[,] ourAnimals = new string[maxPets, 6];
 
-// create some initial ourAnimals array entries
+
 for (int i = 0; i < maxPets; i++)
 {
     switch (i)
@@ -82,7 +82,7 @@ for (int i = 0; i < maxPets; i++)
     ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
 }
 
-// display the top-level menu options
+// TOP LEVEL MENU
 do
 {
     Console.Clear();
